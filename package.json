@@ -15,7 +15,11 @@
   },
   "peerDependencies": {
     "react": ">=18",
-    "@txnlab/use-wallet-react": ">=4"
+    "@txnlab/use-wallet-react": ">=4",
+    "algosdk": ">=2.7.0",
+    "@web3auth/base": ">=9",
+    "@web3auth/base-provider": ">=9",
+    "@web3auth/modal": ">=9"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
