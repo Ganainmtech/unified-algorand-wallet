@@ -1,0 +1,23 @@
+{
+  "name": "@ganainmtech/unified-algorand-wallet",
+  "version": "0.1.0",
+  "description": "A lightweight wallet abstraction for Algorand that unifies Web3Auth and traditional WalletConnect-based wallets into a single signer interface compatible with AlgoKit.",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  }
+}
